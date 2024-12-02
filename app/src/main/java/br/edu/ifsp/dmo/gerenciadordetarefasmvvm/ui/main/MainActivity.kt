@@ -12,6 +12,8 @@ import br.edu.ifsp.dmo.gerenciadordetarefasmvvm.databinding.ActivityMainBinding
 import br.edu.ifsp.dmo.gerenciadordetarefasmvvm.databinding.DialogNewTaskBinding
 import br.edu.ifsp.dmo.gerenciadordetarefasmvvm.ui.adapter.TaskAdapter
 import br.edu.ifsp.dmo.gerenciadordetarefasmvvm.ui.listener.TaskClickListener
+import br.edu.ifsp.dmo.gerenciadordetarefasmvvm.data.State.Todas;
+import br.edu.ifsp.dmo.gerenciadordetarefasmvvm.data.State.Pendente;
 
 class MainActivity : AppCompatActivity(), TaskClickListener {
     private lateinit var binding: ActivityMainBinding

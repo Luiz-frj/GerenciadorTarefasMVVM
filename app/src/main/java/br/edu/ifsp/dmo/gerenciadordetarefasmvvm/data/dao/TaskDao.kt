@@ -1,6 +1,7 @@
 package br.edu.ifsp.dmo.gerenciadordetarefasmvvm.data.dao
 
 import br.edu.ifsp.dmo.gerenciadordetarefasmvvm.data.model.Task
+import java.util.stream.Collectors
 
 object TaskDao {
 
@@ -17,6 +18,10 @@ object TaskDao {
             .filter { t -> t.id == id }
             .findFirst()
             .orElse(null)
+    }
+
+    fun updateList(){
+        tasks = tasks.stream().sorted().collect(Collectors.toList())
     }
 
 }
